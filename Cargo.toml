@@ -1,0 +1,12 @@
+[package]
+name = "genetic-files"
+version = "0.0.0"
+description = "A utility for mutating...files?"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+license = "BSD-2-Clause"
+
+[[bin]]
+name = "mate-files"
+path = "src/main.rs"
+
+[dependencies]

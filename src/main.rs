@@ -59,11 +59,13 @@ fn main() {
         Some(c) => {
             match c.parse::<usize>() {
                 Ok(0) => {
-                    panic!("Error: Cannot accept 0 crossover-points.");
+                    println!("Error: Cannot accept 0 crossover-points.");
+                    return;
                 },
                 Ok(n) => n,
                 Err(e) => {
-                    panic!("Error: Failed to parse crossover-points: {}", e);
+                    println!("Error: Failed to parse crossover-points: {}", e);
+                    return;
                 },
             }
         },
@@ -75,7 +77,8 @@ fn main() {
             match c.parse::<f64>() {
                 Ok(n) => n,
                 Err(e) => {
-                    panic!("Error: Failed to parse mutation-rate: {}", e);
+                    println!("Error: Failed to parse mutation-rate: {}", e);
+                    return;
                 },
             }
         },
@@ -86,11 +89,13 @@ fn main() {
         Some(c) => {
             match c.parse::<usize>() {
                 Ok(0) => {
-                    panic!("Error: Cannot accept 0 bytes as the unit.");
+                    println!("Error: Cannot accept 0 bytes as the unit.");
+                    return;
                 },
                 Ok(n) => n,
                 Err(e) => {
-                    panic!("Error: Failed to parse unit: {}", e);
+                    println!("Error: Failed to parse unit: {}", e);
+                    return;
                 },
             }
         },
@@ -101,11 +106,13 @@ fn main() {
         Some(c) => {
             match c.parse::<usize>() {
                 Ok(0) => {
-                    panic!("Error: Cannot accept 0 bytes as the stride.");
+                    println!("Error: Cannot accept 0 bytes as the stride.");
+                    return;
                 },
                 Ok(n) => n,
                 Err(e) => {
-                    panic!("Error: Failed to parse stride: {}", e);
+                    println!("Error: Failed to parse stride: {}", e);
+                    return;
                 },
             }
         },

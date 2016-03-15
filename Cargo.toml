@@ -1,8 +1,10 @@
 [package]
 name = "genetic-files"
 version = "1.0.0"
-description = "A utility for mutating...files?"
+description = "A utility for mating...files?"
+repository = "https://github.com/vadixidav/genetic-files"
 authors = ["Geordon Worley <vadixidav@gmail.com>"]
+keywords = ["file", "files", "mate", "genetic"]
 license = "BSD-2-Clause"
 
 [[bin]]

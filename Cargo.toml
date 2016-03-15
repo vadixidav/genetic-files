@@ -1,6 +1,6 @@
 [package]
 name = "genetic-files"
-version = "0.0.0"
+version = "1.0.0"
 description = "A utility for mutating...files?"
 authors = ["Geordon Worley <vadixidav@gmail.com>"]
 license = "BSD-2-Clause"
@@ -12,3 +12,4 @@ path = "src/main.rs"
 [dependencies]
 itertools = "0.4.11"
 clap = "2.1.2"
+rand = "0.3.14"
